@@ -1,0 +1,47 @@
+nav div{
+  display: flex;
+    justify-content: center;
+align-items: flex-end;
+align-items: center;
+background-color: #FFE4A7;
+height: 80px;
+}
+div button{
+  display: flex;
+justify-content: center;
+border: none;
+background: none;
+width: 50px;
+    height: 50px;
+}
+
+button img {
+  width: 40px;
+    height: 40px;
+     background-color: #FF2171;
+   border-radius: 50%;
+}
+
+form{
+  background-color: #FF2171;
+  width: 750px;
+  height: 50px;
+    border-radius: 50px;
+}
+
+form button {
+  background-color: 0 none;
+  width: 50px;
+  height: 50px; 
+}
+
+#paginicio {
+  width: 50px;
+  height: 50px;
+  background-color: none;
+}
+
+input{
+  background: none;
+   border-radius: 50px;
+}

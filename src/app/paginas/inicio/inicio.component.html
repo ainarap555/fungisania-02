@@ -1,0 +1,57 @@
+<!--Carrusel-->
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a routerLink="ofertas"><img src="./oferta referncia.jpg" class="d-block w-100" alt="of"></a>
+      </div>
+      <div class="carousel-item">
+        <a routerLink="novedades"><img src="./producto referencia.jpg" class="d-block w-100" alt="nov"></a>
+      </div>
+      <div class="carousel-item">
+        <a routerLink="ofertas"><img src="./promoción de productos .jpg" class="d-block w-100" alt="..."></a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!--Menu-->
+<app-nav2></app-nav2>
+<router-outlet></router-outlet>
+
+<div class="titulo">
+<h1>Para ti</h1>
+</div>
+<!--Productos-->
+<div class="card-body border-danger mb-3">
+  <ng-container *ngIf="Productos && Productos.length">
+    <ng-container *ngFor="let producto of Productos">
+      <div *ngIf="producto.disponibilidad" class="card">
+        <div>
+            <img [src]="producto.imagen" alt="{{producto.nombre}}" class="producto-imagen">
+        </div>
+        <hr>
+        <div>
+          <h5>{{ producto.nombre }}</h5>
+          <p>{{ producto.descripcion }}</p>
+          <p>{{ producto.precio | currency}}</p>
+          <p>{{ producto.cantidad }}</p>
+        </div>
+
+        <div class="containerEx">
+          <button type="button" (click)="agregarCarrito(producto)">
+            <img src="/carrito.png">
+          </button>
+          <button type="button" (click)="agregarFavorito(producto)">
+            <img src="/favoritos.png">
+          </button>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>

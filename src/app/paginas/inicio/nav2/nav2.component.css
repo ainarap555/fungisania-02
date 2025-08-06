@@ -1,0 +1,11 @@
+nav {
+    background-color: #FF2171;
+}
+a{
+    color: #FFE4A7
+}
+ul div{
+    border-width: 1px;
+    border-inline-color: #FFE4A7;
+    border-top: none;
+}

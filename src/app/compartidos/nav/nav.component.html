@@ -1,0 +1,19 @@
+<nav>
+    <div>
+      <div class="col">
+      <a routerLink="inicio" class=""><img src="/fungisania-logo-trasparente.png" id="paginicio"></a>
+      </div>
+      <div class="col">
+        <form class="d-flex p-1" role="search" (submit)="$event.preventDefault()">
+          <input class="form-control" type="text" placeholder="Buscar productos..." />
+          <button type="submit"><img src="/lupa.png" id="lupa"></button>
+        </form>
+      </div>
+      <button class="col"><a routerLink="carrito" class="p-1"><img src="/carrito.png"></a></button>
+      <button class="col"><a routerLink="favoritos" class="p-1"><img src="/favoritos.png"></a></button>
+      <button>Cambiar modo</button>
+      <button><a routerLink="iniciarSesion"><img src="" width="50px">Iniciar sesion</a></button>
+      <button><a routerLink="registro"><img src="">Registrarse</a></button>
+    </div>
+    
+  </nav>

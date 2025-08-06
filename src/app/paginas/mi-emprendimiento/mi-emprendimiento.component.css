@@ -1,0 +1,30 @@
+.titulo {
+    width: 70%;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #FF2171;
+}
+.titulo h1{
+    text-align: left;
+    color: #FFE4A7;
+}
+
+#texto {
+    background-color: #FF90BB;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+    height: 90%;
+    margin-left: 25px;
+    }
+
+#texto p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    color: #FFE4A7;
+}

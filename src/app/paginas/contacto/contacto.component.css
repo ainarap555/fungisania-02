@@ -1,0 +1,32 @@
+.titulo {
+    width: 70%;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #FF2171;
+}
+
+.titulo h1{
+    text-align: left;
+    color: #FFE4A7;
+}
+ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+li button{
+     border: none;
+    background: none;
+}
+a img{
+    width: 100px;
+    height: 100px;
+}
+
+iframe{
+    margin-bottom: 50px;
+}

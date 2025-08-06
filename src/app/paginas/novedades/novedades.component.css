@@ -1,0 +1,31 @@
+#noticias {
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF2171;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.titulo {
+    width: 70%;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #FF2171;
+}
+.titulo h1{
+    text-align: left;
+    color: #FFE4A7;
+}
+html{
+    background-color: #FFFAD7;
+}
