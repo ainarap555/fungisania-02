@@ -12,6 +12,11 @@
     align-items: flex-end;
     justify-content: center;
     flex-wrap: wrap; columns: 4;
+     border: none;
+    box-shadow: 0 4px 10px #FF2171;
+    transition: transform 0.3s, box-shadow o.3s;
+    overflow: hidden;
+    width: 250px;
 }
 .containerEx{
     display: flex;
@@ -60,6 +65,7 @@ hr{
     padding: 0 auto;
      width: 200px;
     height: 200px;
+    object-fit: cover;
 }
 
 p{

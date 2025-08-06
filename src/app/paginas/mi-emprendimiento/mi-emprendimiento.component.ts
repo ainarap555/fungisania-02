@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
-import { Muestra } from '../../modelos/muestra.model';
+
 
 @Component({
   selector: 'app-mi-emprendimiento',
@@ -11,10 +10,5 @@ import { Muestra } from '../../modelos/muestra.model';
   styleUrl: './mi-emprendimiento.component.css'
 })
 export class MiEmprendimientoComponent {
-MuestraProdu: Muestra [] = [
-
- 
-  
-]
 
 }

@@ -9,12 +9,12 @@ export class NavegadorService {
   navegador$ = this.navegadorSubject.asObservable();
   textoFiltroActual: string = "";
   ProductosFiltrados = this.navegadorSubject.getValue();
-  buscar(producto: Producto){
+  buscar(){
     const productos = this.navegadorSubject.getValue();
     const filtro = this.textoFiltroActual.toLowerCase().trim();
     if(!filtro){
       //Si el filtro esta vacio, muestra los productos
-      this.ProductosFiltrados = [...productos, producto];
+      this.ProductosFiltrados = [...productos];
     }else{
       //Si hay texto, filtra los productos cuyo nombre o descripcion contienen ese texto
       this.ProductosFiltrados = this.navegadorSubject.getValue().filter(

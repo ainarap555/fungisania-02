@@ -1,19 +1,33 @@
 <nav>
-    <div>
-      <div class="col">
+  <div>
+    <div class="col">
       <a routerLink="inicio" class=""><img src="/fungisania-logo-trasparente.png" id="paginicio"></a>
-      </div>
-      <div class="col">
-        <form class="d-flex p-1" role="search" (submit)="$event.preventDefault()">
-          <input class="form-control" type="text" placeholder="Buscar productos..." />
-          <button type="submit"><img src="/lupa.png" id="lupa"></button>
-        </form>
-      </div>
-      <button class="col"><a routerLink="carrito" class="p-1"><img src="/carrito.png"></a></button>
-      <button class="col"><a routerLink="favoritos" class="p-1"><img src="/favoritos.png"></a></button>
-      <button>Cambiar modo</button>
-      <button><a routerLink="iniciarSesion"><img src="" width="50px">Iniciar sesion</a></button>
-      <button><a routerLink="registro"><img src="">Registrarse</a></button>
     </div>
+    <div class="col">
+      <form class="d-flex p-1" role="search" (submit)="$event.preventDefault()">
+        <input class="form-control" type="text" placeholder="Buscar productos..." />
+        <button type="submit"><img src="/lupa.png" id="lupa"></button>
+      </form>
+    </div>
+    <button class="col"><a routerLink="carrito" class="p-1"><img src="/carrito.png"></a></button>
+    <button class="col"><a routerLink="favoritos" class="p-1"><img src="/favoritos.png"></a></button>
+    <li lass="nav-item dropdown">
+      <button class="nav-link dropdown-toggle col" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="/us.png" width="50px">
+      </button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item"><button><a routerLink="iniciarSesion">Iniciar sesion</a></button></li>
+        <li class="dropdown-item"><button><a routerLink="registro">Registrarse</a></button></li>
+      </ul>
+    </li>
+     <!-- Botón para alternar entre modo claro y modo oscuro -->
+        <li class="nav-item">
+          <button class="btn btn-outline-light ms-2 d-flex align-items-center" (click)="alternarModoOscuro()">
+            <i class="bi" [ngClass]="modoOscuroActivado ? 'bi-sun-fill' : 'bi-moon-fill'">Cambiar modo</i>
+          </button>
+        </li>
+        
+  </div>
+  
     
-  </nav>
+</nav>

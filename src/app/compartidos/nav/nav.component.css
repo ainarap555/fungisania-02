@@ -22,6 +22,7 @@ button img {
    border-radius: 50%;
 }
 
+
 form{
   background-color: #FF2171;
   width: 750px;
@@ -44,4 +45,7 @@ form button {
 input{
   background: none;
    border-radius: 50px;
+}
+li {
+   list-style: none;
 }

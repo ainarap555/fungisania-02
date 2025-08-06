@@ -109,7 +109,5 @@ agregarFavorito(producto: Producto){
   this.favoritosService.agregarAFavoritos(producto);
   alert('Producto agregado a favoritos')
 }
-buscarProductos(producto: Producto){
-  this.navegadorService.buscar(producto);
-}
+//buscarProductos(producto: Producto){this.navegadorService.buscar(producto);}
 }
