@@ -12,19 +12,13 @@
 
 #texto {
     background-color: #FF90BB;
-    display: flex;
-    justify-content: left;
-    align-items: center;
     width: 50%;
     height: 90%;
-    margin-left: 25px;
+    display: flex;
+    justify-content: center;
     }
 
 #texto p{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     font-size: 32px;
     color: #FFE4A7;
 }

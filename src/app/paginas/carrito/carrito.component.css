@@ -1,4 +1,4 @@
-#titulo {
+.titulo {
     width: 70%;
     height: 50px;
     margin-top: 50px;
@@ -6,7 +6,7 @@
     background-color: #FF2171;
 }
 
-#titulo h1{
+.titulo h1{
     text-align: left;
     color: #FFE4A7;
 }

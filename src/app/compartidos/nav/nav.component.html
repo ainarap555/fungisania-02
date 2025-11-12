@@ -1,9 +1,9 @@
-<nav>
-  <div>
-    <div class="col">
+<nav class="nav1">
+  <div class="nav1">
+    <div class="col nav1">
       <a routerLink="inicio" class=""><img src="/fungisania-logo-trasparente.png" id="paginicio"></a>
     </div>
-    <div class="col">
+    <div class="col nav1">
       <form class="d-flex p-1" role="search" (submit)="$event.preventDefault()">
         <input class="form-control" type="text" placeholder="Buscar productos..." />
         <button type="submit"><img src="/lupa.png" id="lupa"></button>
@@ -11,7 +11,9 @@
     </div>
     <button class="col"><a routerLink="carrito" class="p-1"><img src="/carrito.png"></a></button>
     <button class="col"><a routerLink="favoritos" class="p-1"><img src="/favoritos.png"></a></button>
-    <li lass="nav-item dropdown">
+    <button class="col"><a routerLink="iniciarSesion">Iniciar sesion</a></button>
+    <button class="col"><a routerLink="registro">Registrarse</a></button>
+    <!--<li lass="nav-item dropdown">
       <button class="nav-link dropdown-toggle col" data-bs-toggle="dropdown" aria-expanded="false">
         <img src="/us.png" width="50px">
       </button>
@@ -19,7 +21,7 @@
         <li class="dropdown-item"><button><a routerLink="iniciarSesion">Iniciar sesion</a></button></li>
         <li class="dropdown-item"><button><a routerLink="registro">Registrarse</a></button></li>
       </ul>
-    </li>
+    </li>-->
      <!-- Botón para alternar entre modo claro y modo oscuro -->
         <li class="nav-item">
           <button class="btn btn-outline-light ms-2 d-flex align-items-center" (click)="alternarModoOscuro()">

@@ -1,0 +1,34 @@
+.container{
+    width: 30%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-top: 50px;
+    background-color: #FF2171;
+    border-radius: 5%;
+   
+}
+
+.container img{
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap; columns: 4;
+}
+
+form label{
+    text-align: left;
+    color: #FFE4A7;
+}
+
+button{
+    justify-content: center;
+    padding: 0 auto;
+    margin: 10px auto;
+}

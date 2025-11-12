@@ -1,27 +1,25 @@
-<div>
+<div class="container">
     <picture>
-        <img src="" alt="">
+        <img src="./us.png">
     </picture>
-    <form action="">
+    <form>
         <div>
             <label for="correo">Correo electronico</label>
-            <div class="input-group">
-                <input type="email" id="correo" formControlName="correo" class="form-control">
-            </div>
+            <input type="email" id="correo" formControlName="correo" class="form-control">
             <div *ngIf="">
                 Ingresa un correo válido.
             </div>
         </div>
-        <label for="contraseña" formControlName="contraseña" class="form-control">contraseña</label>
         <div>
-            <div class="input-group">
-                <input type="password">
-            </div>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" formControlName="contraseña"  class="form-control">
         </div>
     </form>
     <div>
         <button>Iniciar Sesion</button>
     </div>
+    <div class="enlaces">
     <a href="">¿Olvidastes tu contraseña?</a>
     <a href="">¿El email no coincide?</a>
+    </div>
 </div>

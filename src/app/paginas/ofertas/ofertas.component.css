@@ -6,6 +6,7 @@
     background-color: #FF90BB;
     height: 18%;
     width: 18%;
+    margin-bottom: 150px;
 }
 .card-body {
     display: flex;

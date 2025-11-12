@@ -5,8 +5,28 @@
 <div *ngIf="productosEnFavoritos.length === 0">
     <p>No hay favoritos guardados</p>
 </div>
-<div *ngIf="productosEnFavoritos.length">
-    <table class="table">
+<div *ngIf="productosEnFavoritos.length" class="card">
+    <div *ngFor="let producto of productosEnFavoritos" class="card-body">
+        <div class="card-item">
+            <img [src]="producto.imagen" alt="{{producto.nombre}}">
+        </div>
+        <div class="card-item">
+            <p>{{producto.nombre}}</p>
+            <p>{{producto.descripcion}}</p>
+            <p>{{producto.precio | currency}}</p>
+        </div>
+        <div>
+            <div>
+                <button (click)="eliminarFavoritos(producto.id)">Eliminar</button>
+            </div>
+            <div>
+                <button (click)="agregarCarrito(producto)">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<table class="table">
         <thead>
             <tr>
                 <th>Imagen</th>
@@ -31,5 +51,4 @@
                 </td>
             </tr>
         </tbody>
-    </table>
-</div>
+    </table>-->

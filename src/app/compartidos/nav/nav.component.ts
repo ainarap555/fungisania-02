@@ -4,8 +4,8 @@ import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { Producto } from '../../modelos/producto.model';
 import { NavegadorService } from '../../servicios/navegador.service';
-
-
+import { IniciarSesionComponent } from '../../auth/iniciar-sesion/iniciar-sesion.component';
+import { RegistroComponent } from '../../auth/registro/registro.component';
 @Component({
   selector: 'app-nav',
   imports: [CommonModule, RouterModule],
